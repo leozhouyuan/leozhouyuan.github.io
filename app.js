@@ -73,6 +73,8 @@ function renderHome() {
             <a href="https://www.douyin.com" target="_blank" class="quick-link-item"><i class="fab fa-tiktok"></i> 抖音</a>
             <a href="https://stackoverflow.com" target="_blank" class="quick-link-item"><i class="fab fa-stack-overflow"></i> StackOverflow</a>
             <a href="https://www.baidu.com" target="_blank" class="quick-link-item"><i class="fas fa-search"></i> 百度</a>
+            <!-- 🆕 聊天室（主页快速跳转） -->
+            <a href="https://blogleozy.pages.dev/" target="_blank" class="quick-link-item"><i class="fas fa-comment"></i> 聊天室</a>
         </div>
     `;
 }
@@ -202,7 +204,7 @@ async function renderPost(postId) {
 }
 
 // ============================================================
-//  4. 常用导航
+//  4. 常用导航（含聊天室）
 // ============================================================
 function renderLinks() {
     const sites = [
@@ -217,6 +219,8 @@ function renderLinks() {
         { name: '百度', icon: 'fas fa-search', url: 'https://www.baidu.com' },
         { name: 'CSDN', icon: 'fas fa-code', url: 'https://www.csdn.net' },
         { name: 'V2EX', icon: 'fas fa-comment', url: 'https://www.v2ex.com' },
+        // 🆕 聊天室（常用导航页面）
+        { name: '聊天室', icon: 'fas fa-comment', url: 'https://blogleozy.pages.dev/' },
     ];
 
     const cards = sites.map(s => `

@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="leozhouyuan · 周圆的个人博客，记录技术、设计与生活。" />
+    <meta name="keywords" content="个人博客, 周圆, leozhouyuan, 技术, 设计, 前端" />
     <title>leozhouyuan · 周圆</title>
+
+    <!-- 预连接（加快 CDN 资源加载） -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
     <!-- Font Awesome (图标库) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- Markdown 解析库 -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Markdown 解析库（defer 加载，不阻塞渲染） -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer onerror="console.warn('⚠️ marked 库加载失败，请检查网络或更换CDN。')"></script>
+    <!-- 自定义样式 -->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -39,6 +47,7 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <!-- 主脚本（defer 确保在 marked 加载后执行） -->
+    <script src="app.js" defer></script>
 </body>
 </html>

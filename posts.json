@@ -1,0 +1,18 @@
+[
+    {
+        "id": "hello-world",
+        "title": "你好，世界 —— 我的第一篇博客",
+        "date": "2026-09-07",
+        "category": "生活",
+        "excerpt": "终于决定开始写博客了。这里会记录我的技术思考、生活感悟和一切有趣的事。",
+        "filename": "hello-world.md"
+    },
+    {
+        "id": "my-thoughts",
+        "title": "关于设计动效的几点思考",
+        "date": "2026-09-06",
+        "category": "设计",
+        "excerpt": "最近看了 emilkowalski/skills，对界面动效有了更深的理解。好的动效应该克制且物理正确。",
+        "filename": "my-thoughts.md"
+    }
+]
